@@ -1,0 +1,31 @@
+package Demo;
+
+public class Variables {
+	//Widening casting 
+	
+	public static void main(String[] args) {
+		//Declaration and Initialized the variable and 
+		int i =100;
+		
+	   long k=i; //here a long names k is initialized with i that is int type here explicitly conversation is 
+	   //ha ppening that with out losing the data 
+	   float u=k;  //this is also same as above 
+	   
+	   System.out.println("int value"+i);
+	   System.out.println("long value" +k);
+	   System.out.println("Float value" +u);
+	     
+	//Narrowing concept 
+	   
+	double d=100.04;
+	long s=(long) d;
+	int z=(int) s;
+	
+	//ecplicitly narrowing concept where i use to assign that value for lower bytes
+	System.out.println("Double value" +d);
+	System.out.println("long value" +s);
+	System.out.println("Float value" +z);
+	
+	
+	}
+}   
