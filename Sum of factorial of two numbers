@@ -1,0 +1,35 @@
+package Demo;
+
+import java.util.Scanner;
+
+public class FactorialOfTwo{
+	public static void main(String[] args) {
+		//Here i am going to initialize the variables
+		int n;
+		int m;
+		int fact_var=1;
+		int fact_val=1;
+		
+		//scanner object taken here to read the input
+		Scanner sc=new Scanner(System.in);
+		
+		//Taking input from user 
+		System.out.println("Enter your first number:");
+		n=sc.nextInt();
+		System.out.println("enter your second number");
+		m=sc.nextInt();
+		
+		//writing the for loop for m and n
+		for(int i=1; i<=n; i++) {
+		fact_var=fact_var*i;
+		}
+		for(int i=1; i<=m; i++) {
+			fact_val=fact_val*i;
+		}
+		
+		//getting output from given input
+		System.out.println("Factorial of given +n+ and +m+ numbers toatl is :" + (fact_var+fact_val));
+		
+		
+	}
+}
