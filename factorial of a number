@@ -1,0 +1,26 @@
+package Demo;
+import java.util.Scanner;
+
+public class facts {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//initializing the variable
+		int n;
+		int fact_val=1;
+		
+		//creating the scanner object
+		Scanner sc=new Scanner(System.in);
+		
+		//first asking for input
+		System.out.println("Provide a number to calculate Factorial");
+		n=sc.nextInt();
+		
+		//claculation of factorial of given number by using the for loop
+		for(int i=1;i<=n;i++) {
+		fact_val=fact_val*i;
+		}
+		System.out.println("Factorial of above given number is :"+fact_val);
+	}
+
+}
