@@ -1,0 +1,28 @@
+
+	public static void main(String[] args) {
+		
+		//initializing the variables
+		int num1,num2;
+		
+		//scanner will be taken that i can take input from user
+		Scanner sc=new Scanner(System.in);
+		
+		//taking the frist number as input 
+		System.out.println("Enter your first number: ");
+		num1=sc.nextInt();
+		//aking the second number as input fron user
+		System.out.println("Enter your second nuber :");
+		num2=sc.nextInt();
+		
+		//getting output for given input s
+		System.out.println("Arithmetic opersation for two numbes sre:");
+		System.out.println("Addition of two numbers :" + (num1+num2));
+		System.out.println("Substraction of two numbers :" + (num1-num2));
+		System.out.println("multiple of two number:" + (num1*num2));
+		System.out.println("Division iof two numbers :" + (num1/num2));
+		System.out.println("Modulo of twonumber :" + (num1%num2));
+		
+		
+	
+	}
+}
