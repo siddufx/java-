@@ -1,0 +1,47 @@
+package WorkingOnVariables;
+import java.util.Scanner;
+
+public class getAndSetMethod {
+    private String firstName = null;
+    private String lastName = null;
+    private int age = 0;
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        getAndSetMethod k = new getAndSetMethod(); // assuming you meant to instantiate getAndSetMethod, not User
+        System.out.println("Enter first name of user:");
+        k.setFirstName(s.nextLine());
+        System.out.println("Enter last name of user:");
+        k.setLastName(s.nextLine());
+        System.out.println("Enter age of user:");
+        // Use nextLine() and then parse to integer to avoid input mismatch
+        k.setAge(Integer.parseInt(s.nextLine()));
+        System.err.println("Information of existing user:");
+        System.out.println("First Name" + "\t" + "Last Name" + "\t" + "Age");
+        System.out.println(k.getFirstName() + "\t" + k.getLastName() + "\t" + k.getAge());
+    }
+}
