@@ -1,0 +1,31 @@
+package WorkingOnVariables;
+import java.util.Scanner;
+
+public class QuizProgram {
+
+	public static void main(String[] args) {
+	  // initializing variable 
+		int n;
+		
+		//creating the scanner object 
+		Scanner sc=new Scanner(System.in);
+		
+		//giving the quiz question and answers
+		System.out.println("Who is the owner Blue origin?");
+		System.out.println("1.jeff bezos \n2.Elon \n3.adani \n4.ambani");
+		
+		//taking the correct answer from the user
+		System.out.println("Enter the correct answer:");
+		n=sc.nextInt();
+		
+		//validating the answer
+		if (n==1) {
+			System.out.println("congrts u answered correct");
+		}
+		else {
+			System.out.println("its a wrong answer try again");
+		}
+		
+		
+	}
+}
