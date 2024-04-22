@@ -1,0 +1,38 @@
+package WorkingOnVariables;
+
+import java.util.Scanner;
+
+public class quiz2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//initializing the variable
+		int n;
+		
+		//creating the scanner object
+		Scanner sc=new Scanner(System.in);
+		
+		//creating while loop to make it run upto infinity 
+		while(true) {
+			//giving the questions and answers
+			System.out.println("What capital of karnataka?");
+			System.out.println("1. Bengaluru \n2. Mysore \n3. ballari \n4.Bagalkot \n5. Exit");
+			
+			//taking the right answer from the user\
+			System.out.println("Enter your choice : 1/2/3/4/5");
+			n=sc.nextInt();
+			
+			//validating the answer given by user
+			if(n==1) {
+				System.out.println("Congratulations u gave right answer.");
+			}
+			else if (n==5) {
+				break;
+			}
+			else {
+				System.out.println("U r wrong pls try again");
+			}
+		}
+	}
+
+}
