@@ -1,0 +1,18 @@
+package Demo;
+
+public class Fibo {
+	
+	public static void main(String[] args) {
+	// initializing the variablees
+		int firstNumber=0,secondNumber=1,nextNumber,n=10;
+		
+		//for loop to write the logic to run the fiboseries
+		for(int i=1;i<=n;i++) {
+			System.out.print(firstNumber + ",");
+			nextNumber=firstNumber+secondNumber;
+			firstNumber=secondNumber;
+			secondNumber=nextNumber;
+		}
+	}
+
+}
