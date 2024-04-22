@@ -1,0 +1,17 @@
+package Demo;
+
+ public class Arthmetics{
+	 public static void main(String[] args) {
+		//initialzng the variable
+		 int num1=10, num2=20;
+		 
+		 //getting the output here 
+		 System.out.println("Arithmetic operatiom for two numbers is :");
+		 System.out.println("Addition of two number is:" +(num1+num2));
+		 System.out.println("Substrctoin of two numbers is:"+(num1-num2));
+		 System.out.println("Multiplication of two numbers is:" +(num1*num2));
+		 System.out.println("Division of two number is:"+(num1/num2));
+		 System.out.println("Modulo of two numbers is:" +(num1%num2));
+	 }
+ }
+
